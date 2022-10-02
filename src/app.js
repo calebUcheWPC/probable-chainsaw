@@ -2,12 +2,12 @@ const express = require('express')
 const morgan = require('morgan')
 const dotenv = require('dotenv')
 const path = require('path')
-// const db = require('./db/mongoose_db')
+const db = require('./db/mongoose_db')
 const cookieParser = require('cookie-parser')
 // const router = require('./routes')
 
 dotenv.config()
-// db()
+db()
 const PORT = process.env.PORT || 3000
 
 const app = express()
